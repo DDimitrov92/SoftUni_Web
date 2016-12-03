@@ -113,7 +113,7 @@ namespace Web_Site.Controllers
                         else if (file.ContentLength > 1024 * 1024)
                         {
                             TempData["notice"] = "Select files less than 2MB";
-                            return View(listing);
+                            return View(listings);
                         }
                     }
                     if (file != null && file.ContentLength > 0)
